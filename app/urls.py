@@ -16,9 +16,6 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
-from django.views import generic
-
-from src.modules.dashboard import urls
 
 urlpatterns = [
     url('', include('modules.dashboard.urls')),
