@@ -15,7 +15,7 @@ import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-sbmn9agdy*q*dgw_1f$=4+l_7*-e(+58c@00r(l@k0-ka31-w0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://zomato-mini-app.herokuapp.com/']
+ALLOWED_HOSTS = []
 
 # Application definition
 
